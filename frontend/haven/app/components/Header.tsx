@@ -35,7 +35,7 @@ export const Header = () => {
             style={{ backgroundImage: `url(${header_bg.src})` }}
             className="bg-cover bg-no-repeat bg-center min-h-screen"
         >
-            <div className="flex flex-col items-center justify-center min-h-screen px-4 py-24 bg-gradient-to-b from-black/80 to-black/10">
+            <div className="flex flex-col items-center justify-center min-h-screen px-4 py-24 bg-linear-to-b from-black/80 to-black/10">
                 <h1 className="text-6xl text-white font-extrabold tracking-widest drop-shadow-lg mb-3">
                     HAVEN
                 </h1>
@@ -48,7 +48,7 @@ export const Header = () => {
                     className="flex flex-wrap items-end bg-white rounded-2xl shadow-2xl p-6 gap-6 w-full max-w-4xl"
                 >
                     {/* Destination */}
-                    <div className="flex flex-col gap-2 flex-1 min-w-[180px]">
+                    <div className="flex flex-col gap-2 flex-1 min-w-45">
                         <label htmlFor="destination" className="text-xs font-semibold text-slate-500 uppercase tracking-widest">
                             Destination
                         </label>
@@ -64,7 +64,7 @@ export const Header = () => {
                     </div>
 
                     {/* Check In */}
-                    <div className="flex flex-col gap-2 flex-1 min-w-[160px]">
+                    <div className="flex flex-col gap-2 flex-1 min-w-40">
                         <label htmlFor="check-in" className="text-xs font-semibold text-slate-500 uppercase tracking-widest">
                             Check In
                         </label>
@@ -86,7 +86,7 @@ export const Header = () => {
                     </div>
 
                     {/* Check Out */}
-                    <div className="flex flex-col gap-2 flex-1 min-w-[160px]">
+                    <div className="flex flex-col gap-2 flex-1 min-w-40">
                         <label htmlFor="check-out" className="text-xs font-semibold text-slate-500 uppercase tracking-widest">
                             Check Out
                         </label>
