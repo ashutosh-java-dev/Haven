@@ -6,6 +6,7 @@ import chennaiImage from "../assets/images/8988706248_ddc81393bb_b.jpg";
 import coorgImage from "../assets/images/coorg-hill-station1.jpg";
 import jaipurImage from "../assets/images/Front-facade-of-Palace-of-the-Winds-Hawa-Mahal-Jaipur-Rajasthan-India.jpg";
 import udaipurImage from "../assets/images/Pichola_Lake_in_Udaipur_TravellersofIndia.jpeg";
+import Images from "@/components/Image";
 
 
 type citiesType = {
@@ -45,10 +46,7 @@ export const DestinationsCarousel = () => {
                             className="rounded-sm border border-gray-200 p-3 size-10 transition-colors hover:bg-gray-50 hover:text-gray-900 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none flex justify-center items-center"
                             aria-label="Previous cities"
                         >
-                            <svg className="h-4 w-4" viewBox="0 0 256 512">
-                                <path
-                                    d="M137.375 406.625L9.375 278.625C3.125 272.375 0 264.187 0 256C0 247.812 3.125 239.625 9.375 233.375L137.375 105.375C146.531 96.219 160.281 93.484 172.25 98.437S192 115.062 192 128V384C192 396.937 184.219 408.609 172.25 413.562S146.531 415.781 137.375 406.625Z"/>
-                            </svg>
+                            {Images.CARET_LEFT}
                         </button>
 
                         <button
@@ -58,10 +56,7 @@ export const DestinationsCarousel = () => {
                             className="rounded-sm border border-gray-200 p-3 size-10 transition-colors hover:bg-gray-50 hover:text-gray-900 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none flex justify-center items-center"
                             aria-label="Next cities"
                         >
-                            <svg className="h-4 w-4" viewBox="0 0 256 512">
-                                <path
-                                    d="M118.625 105.375L246.625 233.375C252.875 239.625 256 247.812 256 256C256 264.187 252.875 272.375 246.625 278.625L118.625 406.625C109.469 415.781 95.719 418.516 83.75 413.562S64 396.937 64 384V128C64 115.062 71.781 103.391 83.75 98.437S109.469 96.219 118.625 105.375Z"/>
-                            </svg>
+                            {Images.CARET_RIGHT}
                         </button>
                     </div>
                 </div>
