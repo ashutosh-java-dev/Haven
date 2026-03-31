@@ -10,7 +10,7 @@ export async function FeaturedHotels() {
     return (
         <section className="mb-10">
             <div className="container mx-auto flex flex-col gap-4">
-                <h2>Featured Hotels</h2>
+                <h2 className="text-2xl font-semibold">Featured Hotels</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
                     {/* Hotel Cards */}
                     {results.map((hotel: HotelMap) => (
@@ -31,7 +31,7 @@ export async function FeaturedHotels() {
                             <div className="p-5">
                                 <div className="flex justify-between items-start">
                                     <div>
-                                        <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">
+                                        <p className="text-xs font-bold text-teal-600 uppercase tracking-wider mb-1">
                                             {hotel.brand}
                                         </p>
                                         <h2 className="text-xl font-bold text-slate-900 leading-tight">
@@ -61,11 +61,11 @@ export async function FeaturedHotels() {
                                 <div className="flex justify-between items-end">
                                     <div>
                                         <p className="text-xs text-slate-400">Starting from</p>
-                                        <p className="text-2xl font-black text-slate-900">
-                                            ₹{hotel.startingPrice}<span className="text-sm font-medium text-slate-500">/night</span>
+                                        <p className="text-2xl font-black text-teal-900">
+                                            ₹{hotel.startingPrice}<span className="text-sm font-medium text-black">/night</span>
                                         </p>
                                     </div>
-                                    <Link href={`/hotels/${hotel.hotelId}`} className="bg-slate-900 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors duration-200 cursor-pointer text-center inline-block">
+                                    <Link href={`/hotels/${hotel.hotelId}`} className="bg-slate-900 hover:bg-teal-600 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors duration-200 cursor-pointer text-center inline-block">
                                         View Details
                                     </Link>
                                 </div>
@@ -97,7 +97,7 @@ export async function FeaturedHotels() {
                                 Beyond this selection lies a curated world of Haven properties designed for the modern traveler.
                             </p>
 
-                            <a href="/explore" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-900 transition-all hover:bg-blue-500 hover:text-white group-hover:px-8">
+                            <a href="/explore" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-900 transition-all hover:bg-teal-500 hover:text-white group-hover:px-8">
                                 Explore All Properties
                                 <span className="size-5">{Images.ARROW_RIGHT_LONG}</span>
                             </a>

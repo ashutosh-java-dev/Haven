@@ -135,7 +135,7 @@ const TestimonialsCarousel: React.FC = () => {
   }, [isAutoPlaying, nextSlide]);
 
   return (
-    <section className="relative py-24 px-6 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+    <section className="relative py-24 px-6 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
       {/* Background Effects - Indian Inspired Colors */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
@@ -176,15 +176,15 @@ const TestimonialsCarousel: React.FC = () => {
               {testimonials.map((testimonial) => (
                 <div
                   key={testimonial.id}
-                  className="w-full flex-shrink-0 px-4"
+                  className="w-full shrink-0 px-4"
                 >
                   <div className="relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 md:p-12 max-w-4xl mx-auto">
                     <QuoteIcon />
                     
                     <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                       {/* Avatar */}
-                      <div className="flex-shrink-0">
-                        <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${testimonial.gradient} flex items-center justify-center text-white text-2xl font-bold shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300`}>
+                      <div className="shrink-0">
+                        <div className={`w-20 h-20 rounded-2xl bg-linear-to-br ${testimonial.gradient} flex items-center justify-center text-white text-2xl font-bold shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300`}>
                           {testimonial.initials}
                         </div>
                       </div>

@@ -43,7 +43,7 @@ export const DestinationsCarousel = () => {
                             onClick={() =>
                                 document.getElementById("carousel")?.scrollBy({left: -300, behavior: "smooth"})
                             }
-                            className="rounded-sm border border-gray-200 p-3 size-10 transition-colors hover:bg-gray-50 hover:text-gray-900 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none flex justify-center items-center"
+                            className="rounded-sm border border-gray-200 p-3 size-10 transition-colors hover:bg-gray-50 hover:text-gray-900 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none flex justify-center items-center cursor-pointer"
                             aria-label="Previous cities"
                         >
                             {Images.CARET_LEFT}
@@ -53,7 +53,7 @@ export const DestinationsCarousel = () => {
                             onClick={() =>
                                 document.getElementById("carousel")?.scrollBy({left: 300, behavior: "smooth"})
                             }
-                            className="rounded-sm border border-gray-200 p-3 size-10 transition-colors hover:bg-gray-50 hover:text-gray-900 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none flex justify-center items-center"
+                            className="rounded-sm border border-gray-200 p-3 size-10 transition-colors hover:bg-gray-50 hover:text-gray-900 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none flex justify-center items-center cursor-pointer"
                             aria-label="Next cities"
                         >
                             {Images.CARET_RIGHT}
