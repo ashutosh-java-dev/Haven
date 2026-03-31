@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { Navbar } from "../components/Navbar";
 import { DestinationsCarousel } from "./components/DestinationsCarousel";
 import { FeaturedHotels } from "./components/FeaturedHotels";
@@ -14,6 +15,7 @@ export default function Home() {
       <FeaturedHotels />
       <HowItWorks />
       <TestimonialsCarousel />
+      <Footer />
     </>
   );
 }
