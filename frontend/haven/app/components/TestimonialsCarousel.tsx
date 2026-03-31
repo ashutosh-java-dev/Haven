@@ -105,7 +105,7 @@ const QuoteIcon: React.FC = () => (
 );
 
 const PropertyBadge: React.FC<{ type: string }> = ({ type }) => (
-  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-700 border border-orange-200">
+  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-teal-100 text-teal-700 border border-teal-200">
     {type}
   </span>
 );
@@ -146,7 +146,7 @@ const TestimonialsCarousel: React.FC = () => {
       <div className="relative max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-orange-500/10 text-orange-400 text-sm font-semibold tracking-wide uppercase mb-4 border border-orange-500/20">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-400 text-sm font-semibold tracking-wide uppercase mb-4 border border-teal-500/20">
             Trusted by Indian Travelers
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -260,12 +260,12 @@ const TestimonialsCarousel: React.FC = () => {
               key={index}
               onClick={() => goToSlide(index)}
               className={`group relative w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentIndex ? "bg-orange-500 w-8" : "bg-white/20 hover:bg-white/40"
+                index === currentIndex ? "bg-teal-500 w-8" : "bg-white/20 hover:bg-white/40"
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
             >
               {index === currentIndex && (
-                <span className="absolute inset-0 rounded-full bg-orange-400 animate-ping opacity-75" />
+                <span className="absolute inset-0 rounded-full bg-teal-400 animate-ping opacity-75" />
               )}
             </button>
           ))}

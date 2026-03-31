@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
           
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 text-orange-500">
+              <div className="w-10 h-10 text-teal-500">
                 {Images.HOTEL}
               </div>
               <span className="text-2xl font-bold text-white">Haven</span>
@@ -130,12 +130,12 @@ const Footer: React.FC = () => {
                     type="email"
                     placeholder="Enter your email"
                     suppressHydrationWarning
-                    className="flex-1 px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-lg text-sm focus:outline-none focus:border-orange-500 transition-colors text-white placeholder-slate-500"
+                    className="flex-1 px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-lg text-sm focus:outline-none focus:border-teal-500 transition-colors text-white placeholder-slate-500"
                   />
                   <button
                     type="submit"
                     suppressHydrationWarning
-                    className="px-4 py-2.5 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-sm font-medium transition-colors"
+                    className="px-4 py-2.5 bg-teal-600 hover:bg-teal-700 text-white rounded-lg text-sm font-medium transition-colors"
                   >
                     Subscribe
                   </button>
@@ -143,7 +143,7 @@ const Footer: React.FC = () => {
               ) : (
                 <div className="flex gap-2 h-[42px]">
                   <div className="flex-1 bg-slate-800/50 border border-slate-700/50 rounded-lg" />
-                  <div className="w-24 bg-orange-600/50 rounded-lg" />
+                  <div className="w-24 bg-teal-600/50 rounded-lg" />
                 </div>
               )}
             </div>
@@ -156,14 +156,14 @@ const Footer: React.FC = () => {
                 <li key={city.name}>
                   <a
                     href={city.href}
-                    className="text-sm hover:text-orange-400 transition-colors"
+                    className="text-sm hover:text-teal-400 transition-colors"
                   >
                     Hotels in {city.name}
                   </a>
                 </li>
               ))}
               <li>
-                <a href="/cities" className="text-sm text-orange-400 hover:text-orange-300">
+                <a href="/cities" className="text-sm text-teal-400 hover:text-teal-300">
                   View all 12+ cities →
                 </a>
               </li>
@@ -177,7 +177,7 @@ const Footer: React.FC = () => {
                 <li key={type.name}>
                   <a
                     href={type.href}
-                    className="text-sm hover:text-orange-400 transition-colors"
+                    className="text-sm hover:text-teal-400 transition-colors"
                   >
                     {type.name}
                   </a>
@@ -193,7 +193,7 @@ const Footer: React.FC = () => {
                 <li key={amenity.id}>
                   <a
                     href={`/amenities/${amenity.id}`}
-                    className="text-sm hover:text-orange-400 transition-colors"
+                    className="text-sm hover:text-teal-400 transition-colors"
                   >
                     {amenity.name}
                   </a>
@@ -207,7 +207,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2.5 mb-6">
               {companyLinks.slice(0, 3).map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-sm hover:text-orange-400 transition-colors">
+                  <a href={link.href} className="text-sm hover:text-teal-400 transition-colors">
                     {link.name}
                   </a>
                 </li>
@@ -218,7 +218,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2.5">
               {supportLinks.slice(0, 4).map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-sm hover:text-orange-400 transition-colors">
+                  <a href={link.href} className="text-sm hover:text-teal-400 transition-colors">
                     {link.name}
                   </a>
                 </li>
@@ -267,7 +267,7 @@ const Footer: React.FC = () => {
                 <span>24/7 Support</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Verified Hotels</span>

@@ -3,21 +3,21 @@ import React from "react";
 
 // STEP 1: Replace this div with your Browse/Search SVG
 const BrowseIcon = () => (
-  <div className="w-full h-full flex items-center justify-center text-blue-600 p-4">
+  <div className="w-full h-full flex items-center justify-center text-teal-600 p-4">
     {Images.SEARCH_LOCATION}
   </div>
 );
 
 // STEP 2: Replace this div with your Compare/Balance SVG
 const CompareIcon = () => (
-  <div className="w-full h-full flex items-center justify-center text-blue-600 p-3">
+  <div className="w-full h-full flex items-center justify-center text-teal-600 p-3">
     {Images.SCALE_UNBALANCED}
   </div>
 );
 
 // STEP 3: Replace this div with your Calendar/Booking SVG
 const BookIcon = () => (
-  <div className="w-full h-full flex items-center justify-center text-blue-600 p-4">
+  <div className="w-full h-full flex items-center justify-center text-teal-600 p-4">
     {Images.CALENDAR_IMAGE}
   </div>
 );
@@ -48,15 +48,14 @@ const steps: Step[] = [
 
 const HowItWorks: React.FC = () => {
   return (
-    <section className="relative bg-linear-to-b from-slate-50 to-white py-24 px-6 overflow-hidden">
-      {/* Decorative background elements */}
+    <section className="relative bg-linear-to-b from-teal-50 to-white py-24 px-6 overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-linear-to-r from-transparent via-slate-200 to-transparent" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-linear-to-r from-transparent via-teal-200 to-transparent" />
       </div>
 
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold tracking-wide uppercase mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-teal-100 text-teal-700 text-sm font-semibold tracking-wide uppercase mb-4">
             Simple Process
           </span>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">How It Works</h2>
@@ -86,7 +85,7 @@ const HowItWorks: React.FC = () => {
               </div>
 
               {/* Step number badge */}
-              <div className="absolute -top-3 -right-3 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">
+              <div className="absolute -top-3 -right-3 w-8 h-8 bg-teal-600 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">
                 {index + 1}
               </div>
             </div>
