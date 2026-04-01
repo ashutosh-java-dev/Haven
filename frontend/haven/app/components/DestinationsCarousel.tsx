@@ -1,6 +1,6 @@
 "use client";
 
-import Image, {StaticImageData} from "next/image";
+import Image from "next/image";
 import bengaluruImage from "../assets/images/shutterstock_154851008_20200123162547_20200123162603.png";
 import chennaiImage from "../assets/images/8988706248_ddc81393bb_b.jpg";
 import coorgImage from "../assets/images/coorg-hill-station1.jpg";
