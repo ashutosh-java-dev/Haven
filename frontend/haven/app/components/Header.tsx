@@ -1,6 +1,6 @@
 "use client";
 import Images from "@/components/Image";
-import header_bg from "./images/header-bg.png";
+import header_bg from "@/assets/images/header-bg.png";
 import React, { useState } from 'react';
 
 const today: string = new Date().toISOString().split("T")[0];

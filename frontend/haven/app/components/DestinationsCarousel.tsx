@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import bengaluruImage from "../assets/images/shutterstock_154851008_20200123162547_20200123162603.png";
-import chennaiImage from "../assets/images/8988706248_ddc81393bb_b.jpg";
-import coorgImage from "../assets/images/coorg-hill-station1.jpg";
-import jaipurImage from "../assets/images/Front-facade-of-Palace-of-the-Winds-Hawa-Mahal-Jaipur-Rajasthan-India.jpg";
-import udaipurImage from "../assets/images/Pichola_Lake_in_Udaipur_TravellersofIndia.jpeg";
+import bengaluruImage from "@/assets/images/shutterstock_154851008_20200123162547_20200123162603.png";
+import chennaiImage from "@/assets/images/8988706248_ddc81393bb_b.jpg";
+import coorgImage from "@/assets/images/coorg-hill-station1.jpg";
+import jaipurImage from "@/assets/images/Front-facade-of-Palace-of-the-Winds-Hawa-Mahal-Jaipur-Rajasthan-India.jpg";
+import udaipurImage from "@/assets/images/Pichola_Lake_in_Udaipur_TravellersofIndia.jpeg";
 import Images from "@/components/Image";
 import { citiesType } from "./type";
 import Link from "next/link";
