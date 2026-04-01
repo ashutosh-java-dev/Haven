@@ -1,4 +1,3 @@
-import Footer from "@/components/layout/Footer";
 import { DestinationsCarousel } from "@/components/feature/home/DestinationsCarousel";
 import { FeaturedHotels } from "@/components/feature/home/FeaturedHotels";
 import { Header } from "@/components/feature/home/Header";
@@ -13,7 +12,6 @@ export default function Home(): React.ReactNode {
       <FeaturedHotels />
       <HowItWorks />
       <TestimonialsCarousel />
-      <Footer />
     </>
   );
 }
