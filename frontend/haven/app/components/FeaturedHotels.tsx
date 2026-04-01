@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { type HotelMap } from "./type";
-import { hotels } from "../api/home/routes";
 import Images from "@/components/Image";
+import { getHotels } from "@/lib";
 
 export async function FeaturedHotels(): Promise<React.ReactNode> {
-    const hotelsData: any = await hotels();
+    const hotelsData = await getHotels("", "limit=5");
     const results: HotelMap[] = hotelsData?.results || [];
 
     return (
