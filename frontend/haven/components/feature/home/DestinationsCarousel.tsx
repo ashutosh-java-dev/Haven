@@ -7,9 +7,17 @@ import coorgImage from "@/assets/images/coorg-hill-station1.jpg";
 import jaipurImage from "@/assets/images/Front-facade-of-Palace-of-the-Winds-Hawa-Mahal-Jaipur-Rajasthan-India.jpg";
 import udaipurImage from "@/assets/images/Pichola_Lake_in_Udaipur_TravellersofIndia.jpeg";
 import Images from "@/components/ui/Image";
-import { citiesType } from "../../types/type";
 import Link from "next/link";
 import Routes from "@/router/routes";
+import { StaticImageData } from "next/image";
+
+type citiesType = {
+    name: string;
+    slug: string;
+    img?: string | StaticImageData;
+    url: string;
+    isReadMore?: boolean;
+};
 
 const cities: citiesType[] = [
     {name: "Bengaluru", slug: "bengaluru", img: bengaluruImage, url: Routes.city("bengaluru")},

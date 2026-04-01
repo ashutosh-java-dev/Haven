@@ -2,7 +2,18 @@
 
 import Images from "@/components/ui/Image";
 import React, { useState, useEffect, useCallback } from "react";
-import { Testimonial } from "../../types/type";
+
+type Testimonial = {
+    id: number,
+    name: string,
+    role: string,
+    location: string,
+    content: string,
+    rating: number,
+    initials: string,
+    gradient: string,
+    propertyType: string
+};
 
 const testimonials: Testimonial[] = [
   {

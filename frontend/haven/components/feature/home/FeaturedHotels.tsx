@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { type HotelMap } from "../../types/type";
+import { type HotelMap } from "../../types/hotels";
 import Images from "@/components/ui/Image";
 import { getHotels } from "@/lib";
 
