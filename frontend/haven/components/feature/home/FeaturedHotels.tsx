@@ -42,10 +42,10 @@ export async function FeaturedHotels(): Promise<React.ReactNode> {
                                 Beyond this selection lies a curated world of Haven properties designed for the modern traveler.
                             </p>
 
-                            <a href="/explore" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-900 transition-all hover:bg-teal-500 hover:text-white group-hover:px-8">
+                            <Link href="/explore" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-900 transition-all hover:bg-teal-500 hover:text-white group-hover:px-8">
                                 Explore All Properties
                                 <span className="size-5">{Images.ARROW_RIGHT_LONG}</span>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="absolute bottom-0 w-full bg-white/5 py-4 backdrop-blur-sm text-center">

@@ -36,7 +36,7 @@ export default function HotelCard({hotel}: {hotel: HotelMap}) {
 
                 <div className="flex flex-wrap gap-2 mt-4">
                     {hotel.tags?.slice(0, 3).map((tag, index) => (
-                        <span key={index} className="bg-slate-100 text-slate-600 text-[10px] font-medium px-2 py-0.5 rounded-full border border-slate-200">
+                        <span key={index} className="bg-teal-100 text-teal-600 text-sm font-medium px-2 py-0.5 rounded-full border border-teal-200">
                             {tag}
                         </span>
                     ))}
