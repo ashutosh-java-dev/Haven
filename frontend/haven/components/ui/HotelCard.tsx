@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { HotelMap } from "../types/hotels";
 import Images from "./Image";
+import Routes from "@/router/routes";
 
 export default function HotelCard({hotel}: {hotel: HotelMap}) {
     return (
@@ -55,7 +56,7 @@ export default function HotelCard({hotel}: {hotel: HotelMap}) {
                             ₹{hotel.startingPrice}<span className="text-sm font-medium text-black">/night</span>
                         </p>
                     </div>
-                    <Link href={`/hotels/${hotel.hotelId}`} className="bg-slate-900 hover:bg-teal-600 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors duration-200 cursor-pointer text-center inline-block">
+                    <Link href={Routes.hotel(hotel.hotelId)} className="bg-slate-900 hover:bg-teal-600 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors duration-200 cursor-pointer text-center inline-block">
                         View Details
                     </Link>
                 </div>
