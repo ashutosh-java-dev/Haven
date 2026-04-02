@@ -4,7 +4,7 @@ import Images from "./Image";
 
 export default function HotelCard({hotel}: {hotel: HotelMap}) {
     return (
-        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 hover:shadow-2xl transition-shadow duration-300 group" key={hotel.hotelId}>
+        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 hover:shadow-2xl transition-shadow duration-300 group">
             <div className="relative h-48 w-full">
                 <img
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

@@ -39,7 +39,7 @@ export default function CityCard({data}: cityCardProps) {
                     </div>
                 ) : (
                     <div
-                        className="relative h-full flex items-end rounded overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:-rotate-2 group-hover:shadow-2xl">
+                        className="relative h-full flex items-end rounded overflow-hidden transition-all duration-300 group-hover:shadow-2xl">
 
                         {data.img && (
                             <div className="absolute inset-0">
@@ -50,7 +50,7 @@ export default function CityCard({data}: cityCardProps) {
                                     sizes="(max-width: 640px) 100vw,
                                                            (max-width: 1024px) 50vw,
                                                            33vw"
-                                    className="object-cover"
+                                    className="object-cover transition-all duration-300 group-hover:scale-105 group-hover:-rotate-2"
                                 />
                                 <div
                                     className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
