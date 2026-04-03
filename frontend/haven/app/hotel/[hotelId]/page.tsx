@@ -45,7 +45,6 @@ export default async function HotelDetailsPage({ params }: { params: Promise<{ h
               <AboutResort
                 description={hotel.description}
                 categories={hotel.categories || []}
-                tags={hotel.tags || []}
               />
             </div>
 

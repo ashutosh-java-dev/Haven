@@ -1,10 +1,9 @@
 interface AboutResortProps {
   description: string;
   categories: string[];
-  tags: string[];
 }
 
-export default function AboutResort({ description, categories, tags }: AboutResortProps) {
+export default function AboutResort({ description, categories }: AboutResortProps) {
   return (
     <div>
       <h2 className="text-2xl font-bold text-gray-900 mb-4">About the Resort</h2>
@@ -16,14 +15,6 @@ export default function AboutResort({ description, categories, tags }: AboutReso
             className="text-sm font-bold text-gray-800 border-b-2 border-teal-500 pb-0.5 hover:text-teal-600 transition-colors cursor-default"
           >
             {cat}
-          </span>
-        ))}
-        {tags.slice(0, 3).map((tag, idx) => (
-          <span
-            key={`tag-${idx}`}
-            className="text-sm text-gray-500 border-b border-gray-300 pb-0.5"
-          >
-            {tag}
           </span>
         ))}
       </div>
