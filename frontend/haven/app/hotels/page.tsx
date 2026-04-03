@@ -9,9 +9,8 @@ export default async function HotelsPage(){
     return (
         <div className="flex justify-center items-center my-36">
             <div className="container mx-auto">
-                <h2 className="text-2xl font-semibold">All Hotels</h2>
+                <h2 className="text-2xl font-semibold mb-8 text-center underline">All Hotels</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-                    {/* Hotel Cards */}
                     {results.map((hotel: HotelMap): React.ReactNode => (
                         <HotelCard key={hotel.hotelId} hotel={hotel} />
                     ))}
