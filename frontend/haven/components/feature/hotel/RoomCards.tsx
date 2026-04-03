@@ -51,9 +51,9 @@ export default function RoomCards({ roomTypes }: RoomCardsProps) {
                 {/* Details Row */}
                 <div className="flex items-center gap-3 text-xs text-gray-500 mb-3">
                   <span>{room.bedConfig}</span>
-                  <span>•</span>
+                  <span>|</span>
                   <span>{room.sizeSqm} sqm</span>
-                  <span>•</span>
+                  <span>|</span>
                   <span>{room.view}</span>
                 </div>
 

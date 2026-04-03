@@ -31,13 +31,6 @@ export default async function HotelDetailsPage({ params }: { params: Promise<{ h
         totalReviews={hotel.ratings?.totalReviews || 0}
       />
 
-      {/* ─── Amenities Strip ─── */}
-      <AmenitiesBar
-        amenities={hotel.amenities || []}
-        freeCancellation={hotel.bookingInfo?.freeCancellation}
-        payAtHotelOptions={hotel.bookingInfo?.payAtHotelOptions}
-      />
-
       {/* ─── Main Content Grid ─── */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -73,7 +66,7 @@ export default async function HotelDetailsPage({ params }: { params: Promise<{ h
           </div>
 
           {/* Right Column — 1/3 width (Sidebar) */}
-          <div className="space-y-6 lg:sticky lg:top-24 max-h-[calc(100vh-6rem)] overflow-y-auto no-scrollbar pb-6">
+          <div className="space-y-6 lg:top-24 overflow-y-auto no-scrollbar pb-6">
             <BookYourStay
               roomTypes={hotel.roomTypes || []}
               freeCancellation={hotel.bookingInfo?.freeCancellation || false}
