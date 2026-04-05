@@ -1,7 +1,6 @@
 import { getHotels } from "@/lib";
 import { Hotel } from "@/components/interface/hotel";
 import Header from "@/components/feature/hotel/Header";
-import AmenitiesBar from "@/components/feature/hotel/AmenitiesBar";
 import Gallery from "@/components/feature/hotel/Gallery";
 import BookYourStay from "@/components/feature/hotel/BookYourStay";
 import AboutResort from "@/components/feature/hotel/AboutResort";

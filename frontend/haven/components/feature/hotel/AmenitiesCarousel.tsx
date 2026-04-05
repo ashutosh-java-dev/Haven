@@ -32,8 +32,6 @@ export default function AmenitiesCarousel({ amenities }: AmenitiesCarouselProps)
             <p className="text-sm text-gray-600 leading-relaxed flex-1">
               {amenity.description || `Enjoy our complimentary ${amenity.name.toLowerCase()} during your stay.`}
             </p>
-
-            {ameenityHasTags(amenity) && (
               <div className="mt-4 flex flex-wrap gap-2">
                 {amenity.isFree ? (
                   <span className="text-[10px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 px-2 py-1 rounded-md">Free</span>
@@ -44,14 +42,9 @@ export default function AmenitiesCarousel({ amenities }: AmenitiesCarouselProps)
                   <span className="text-[10px] font-bold uppercase tracking-wider bg-amber-50 text-amber-700 px-2 py-1 rounded-md">Featured</span>
                 )}
               </div>
-            )}
           </div>
         ))}
       </div>
     </div>
   );
-}
-
-function ameenityHasTags(amenity: Amenity) {
-  return amenity.isFree || amenity.isFeatured;
 }

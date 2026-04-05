@@ -16,7 +16,7 @@ export default function Header(props: PropsMap){
     return (
         <div style={{backgroundImage: `url(${props.coverImageUrl})`}}
              className={"w-screen h-scree bg-cover bg-no-repeat text-white bg-center"}>
-            <div className={"flex items-center justify-center pt-40 pb-60 bg-[#00000069]"}>
+            <div className={"flex items-center justify-center pt-40 pb-60 bg-[#000000b5]"}>
                 <div className="container flex justify-between">
                     <div className={"flex flex-col gap-4"}>
                         <h1 className={"text-4xl font-bold"}>{props.name}</h1>
@@ -34,12 +34,12 @@ export default function Header(props: PropsMap){
                             <span className={"size-10"}>{Images.MAP_LOCATION}</span>
                             <span>{props.city}, {props.state}</span>
                         </div>
-                        <div
+                        {props.averageRating != null && (<div
                             className={"flex items-center gap-3 bg-teal-600 text-shadow-none rounded-lg py-2 px-3 w-fit"}>
                             <span className={"size-5 text-white"}>{Images.STAR}</span>
                             <span>{props.averageRating}</span>
                             <span>({props.totalReviews})</span>
-                        </div>
+                        </div>)}
                     </div>
                     <div>
                         <button
