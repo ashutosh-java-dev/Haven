@@ -2,22 +2,17 @@ import { fetchFromPexels } from "../providers/pexels";
 import { fetchFromUnsplash } from "../providers/unsplash";
 import { fetchFromPixabay } from "../providers/pixabay";
 import { getCache, setCache } from "../cache/memoryCache";
-
-export type ImageResult = {
-  url: string;
-  source: string;
-  photographer?: string;
-};
+import {ImageResult} from "@/components/interface/ImageResult";
 
 function normalize(query: string) {
   return query.toLowerCase().trim();
 }
 
 export async function getImage(query: string): Promise<ImageResult> {
-  const cleanQuery = normalize(query);
+  const cleanQuery: string = normalize(query);
 
   // 1. Cache
-  const cached = getCache<ImageResult>(cleanQuery);
+  const cached: ImageResult | null = getCache<ImageResult>(cleanQuery);
   if (cached) return cached;
 
   try {

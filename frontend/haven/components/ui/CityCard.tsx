@@ -1,11 +1,12 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import {ImageResult} from "@/components/interface/ImageResult";
 
 type cityCardProps = {
     data: {
         name: string;
         slug: string;
-        img?: string | StaticImageData;
+        img?: ImageResult;
         url: string;
         isReadMore?: boolean;
         grid?: boolean;
@@ -44,7 +45,7 @@ export default function CityCard({data}: cityCardProps) {
                         {data.img && (
                             <div className="absolute inset-0">
                                 <Image
-                                    src={data.img}
+                                    src={data.img.url}
                                     alt={data.name}
                                     fill
                                     sizes="(max-width: 640px) 100vw,
