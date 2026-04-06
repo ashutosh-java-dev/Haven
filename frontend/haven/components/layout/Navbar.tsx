@@ -1,4 +1,5 @@
 "use client";
+import Routes from '@/router/routes';
 import Images from '../ui/Image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -42,7 +43,7 @@ export const Navbar = () => {
                         <div className="hidden sm:flex sm:items-center sm:gap-3">
                             {/* Login – Primary CTA */}
                             <Link
-                                href="#"
+                                href={Routes.login()}
                                 className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-teal-600/30 transition-all duration-300 hover:bg-teal-700 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
                             >
                                 Login
