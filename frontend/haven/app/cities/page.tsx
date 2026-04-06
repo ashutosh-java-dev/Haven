@@ -2,7 +2,7 @@ import { getHotels, getImage } from "@/lib";
 import Routes from "@/router/routes";
 import CityCard from "@/components/ui/CityCard";
 
-export default async function AllCitiesPage() {
+export default async function AllCitiesPage(): Promise<React.ReactNode> {
 
     const { cities }: { cities: string[] } = await getHotels("stats", "");
 

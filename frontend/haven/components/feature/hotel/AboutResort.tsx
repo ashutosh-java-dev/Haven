@@ -3,7 +3,7 @@ interface AboutResortProps {
   categories: string[];
 }
 
-export default function AboutResort({ description, categories }: AboutResortProps) {
+export default function AboutResort({ description, categories }: AboutResortProps): React.ReactNode {
   return (
     <div>
       <h2 className="text-2xl font-bold text-gray-900 mb-4">About the Resort</h2>

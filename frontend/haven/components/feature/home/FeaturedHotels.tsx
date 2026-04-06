@@ -6,7 +6,7 @@ import HotelCard from "@/components/ui/HotelCard";
 import Routes from "@/router/routes";
 
 export async function FeaturedHotels(): Promise<React.ReactNode> {
-    const hotelsData = await getHotels("", "limit=5");
+    const hotelsData: { results: HotelMap[] } = await getHotels("", "limit=5");
     const results: HotelMap[] = hotelsData?.results || [];
 
     return (

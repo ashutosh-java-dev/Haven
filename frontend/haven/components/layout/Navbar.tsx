@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { LuMenu, LuX, LuBuilding2 } from 'react-icons/lu';
 
-export const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+export const Navbar: React.FC = (): React.ReactNode => {
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
     return (
         <header className="fixed left-0 right-0 top-0 z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">

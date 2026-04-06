@@ -6,14 +6,14 @@ import { LuUser, LuLock, LuEyeOff, LuEye, LuCircleCheck } from "react-icons/lu";
 import { FcGoogle } from "react-icons/fc";
 import Link from 'next/link';
 
-export default function LoginPage() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [showPassword, setShowPassword] = useState(false);
+export default function LoginPage(): React.ReactNode {
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+    const [showPassword, setShowPassword] = useState<boolean>(false);
 
     // Simple validation
-    const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    const isPasswordValid = password.length >= 6;
+    const isEmailValid: boolean = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    const isPasswordValid: boolean = password.length >= 6;
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat p-4" style={{backgroundImage: `url(${login_bg.src})`}}>

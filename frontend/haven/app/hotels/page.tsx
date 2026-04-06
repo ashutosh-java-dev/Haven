@@ -2,8 +2,8 @@ import { HotelMap } from "@/components/interface/hotels";
 import HotelCard from "@/components/ui/HotelCard";
 import { getHotels } from "@/lib";
 
-export default async function HotelsPage(){
-    const hotelsData = await getHotels("", "");
+export default async function HotelsPage(): Promise<React.ReactNode> {
+    const hotelsData: { results: HotelMap[] } = await getHotels("", "");
     const results: HotelMap[] = hotelsData?.results || [];
     
     return (

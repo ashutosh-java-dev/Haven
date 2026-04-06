@@ -5,7 +5,7 @@ interface AwardsSectionProps {
   awards: Award[];
 }
 
-export default function AwardsSection({ awards }: AwardsSectionProps) {
+export default function AwardsSection({ awards }: AwardsSectionProps): React.ReactNode {
   const dummyAwards: Award[] = [
     {
       id: "award-1",

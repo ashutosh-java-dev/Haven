@@ -1,4 +1,4 @@
-export default function Loading() {
+export default function Loading(): React.ReactNode {
   return (
     <div className="min-h-screen bg-gray-50 animate-pulse">
       {/* Header Skeleton */}

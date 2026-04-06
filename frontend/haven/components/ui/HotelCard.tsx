@@ -3,7 +3,7 @@ import { HotelMap } from "../interface/hotels";
 import Routes from "@/router/routes";
 import { LuStar, LuMapPin } from "react-icons/lu";
 
-export default function HotelCard({hotel}: {hotel: HotelMap}) {
+export default function HotelCard({hotel}: {hotel: HotelMap}): React.ReactNode {
     return (
         <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 hover:shadow-2xl transition-shadow duration-300 group">
             <div className="relative h-48 w-full">

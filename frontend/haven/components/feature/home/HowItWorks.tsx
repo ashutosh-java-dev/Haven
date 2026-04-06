@@ -46,7 +46,7 @@ const steps: Step[] = [
   },
 ];
 
-const HowItWorks: React.FC = () => {
+const HowItWorks: React.FC = (): React.ReactNode => {
   return (
     <section className="relative bg-linear-to-b from-teal-50 to-white py-24 px-6 overflow-hidden">
       <div className="absolute inset-0 -z-10">

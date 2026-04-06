@@ -27,7 +27,7 @@ const cities: citiesType[] = [
     {name: "View All Cities", slug: "view-all", url: Routes.cities(), isReadMore: true},
 ];
 
-export const DestinationsCarousel = (): React.ReactNode => {
+export const DestinationsCarousel: React.FC = (): React.ReactNode => {
     return (
         <section className="py-12 flex justify-center items-center bg-white">
             <div className="container flex flex-col gap-5">

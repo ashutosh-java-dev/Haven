@@ -6,8 +6,8 @@ interface AwardsAndPoliciesProps {
   policies: Policies;
 }
 
-export default function AwardsAndPolicies({ awards, policies }: AwardsAndPoliciesProps) {
-  const safeAwards = awards || [];
+export default function AwardsAndPolicies({ awards, policies }: AwardsAndPoliciesProps): React.ReactNode {
+  const safeAwards: Award[] = awards || [];
 
   if (safeAwards.length === 0 && !policies) {
     return null;

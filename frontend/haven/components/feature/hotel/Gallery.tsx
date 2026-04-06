@@ -7,9 +7,9 @@ interface GalleryProps {
   gallery: MediaItem[];
 }
 
-export default function Gallery({ gallery }: GalleryProps) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const displayItems = gallery.slice(0, 5);
+export default function Gallery({ gallery }: GalleryProps): React.ReactNode {
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const displayItems: MediaItem[] = gallery.slice(0, 5);
 
   return (
     <div className="flex flex-col gap-3">

@@ -11,7 +11,7 @@ interface PropsMap {
     totalReviews: number;
 }
 
-export default function Header(props: PropsMap){
+export default function Header(props: PropsMap): React.ReactNode {
 
     return (
         <div style={{backgroundImage: `url(${props.coverImageUrl})`}}

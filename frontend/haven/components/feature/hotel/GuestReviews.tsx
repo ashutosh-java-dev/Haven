@@ -15,9 +15,9 @@ function getRatingLabel(rating: number): string {
   return "Average";
 }
 
-function RatingBar({ label, value, max = 5 }: { label: string; value?: number; max?: number }) {
-  const safeValue = value || 0;
-  const percentage = (safeValue / max) * 100;
+function RatingBar({ label, value, max = 5 }: { label: string; value?: number; max?: number }): React.ReactNode {
+  const safeValue: number = value || 0;
+  const percentage: number = (safeValue / max) * 100;
   return (
     <div className="flex items-center gap-3">
       <span className="text-sm text-gray-600 w-24 shrink-0">{label}</span>
@@ -32,7 +32,7 @@ function RatingBar({ label, value, max = 5 }: { label: string; value?: number; m
   );
 }
 
-export default function GuestReviews({ ratings, latestReviews }: GuestReviewsProps) {
+export default function GuestReviews({ ratings, latestReviews }: GuestReviewsProps): React.ReactNode {
   const categories: { label: string; key: keyof CategoryRatings }[] = [
     { label: "Cleanliness", key: "cleanliness" },
     { label: "Service", key: "service" },
@@ -72,7 +72,7 @@ export default function GuestReviews({ ratings, latestReviews }: GuestReviewsPro
     }
   ];
 
-  const displayReviews = (latestReviews && latestReviews.length > 0) ? latestReviews : defaultReviews;
+  const displayReviews: Review[] = (latestReviews && latestReviews.length > 0) ? latestReviews : defaultReviews;
 
   return (
     <div>

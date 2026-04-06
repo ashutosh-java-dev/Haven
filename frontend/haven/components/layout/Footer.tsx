@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { LuShieldCheck, LuLifeBuoy, LuCheck, LuBuilding2 } from "react-icons/lu";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
-const cities = [
+const cities: { name: string; href: string }[] = [
   { name: "Bengaluru", href: "/hotels-in-bengaluru" },
   { name: "Chennai", href: "/hotels-in-chennai" },
   { name: "Coorg", href: "/hotels-in-coorg" },
@@ -19,7 +19,7 @@ const cities = [
   { name: "Udaipur", href: "/hotels-in-udaipur" },
 ];
 
-const propertyTypes = [
+const propertyTypes: { name: string; href: string }[] = [
   { name: "Heritage Hotels", href: "/heritage-hotels" },
   { name: "Beach Resorts", href: "/beach-resorts" },
   { name: "Luxury Hotels", href: "/luxury-hotels" },
@@ -30,7 +30,7 @@ const propertyTypes = [
   { name: "Palace Stays", href: "/palace-stays" },
 ];
 
-const amenities = [
+const amenities: { name: string; id: string }[] = [
   { name: "Free WiFi", id: "wifi" },
   { name: "Swimming Pool", id: "pool" },
   { name: "Spa & Wellness", id: "spa" },
@@ -41,7 +41,7 @@ const amenities = [
   { name: "Kids Club", id: "kids_club" },
 ];
 
-const companyLinks = [
+const companyLinks: { name: string; href: string }[] = [
   { name: "About Us", href: "/about" },
   { name: "Careers", href: "/careers" },
   { name: "Press", href: "/press" },
@@ -50,7 +50,7 @@ const companyLinks = [
   { name: "List Your Property", href: "/list-property" },
 ];
 
-const supportLinks = [
+const supportLinks: { name: string; href: string }[] = [
   { name: "Help Center", href: "/help" },
   { name: "Contact Us", href: "/contact" },
   { name: "Cancellation Policy", href: "/cancellation" },
@@ -59,7 +59,7 @@ const supportLinks = [
   { name: "Privacy Policy", href: "/privacy" },
 ];
 
-const socialLinks = [
+const socialLinks: { name: string; href: string; icon: React.ReactNode }[] = [
   {
     name: "Facebook",
     href: "#",
@@ -82,10 +82,10 @@ const socialLinks = [
   },
 ];
 
-const Footer: React.FC = () => {
-  const [mounted, setMounted] = useState(false);
+const Footer: React.FC = (): React.ReactNode => {
+  const [mounted, setMounted] = useState<boolean>(false);
 
-  useEffect(() => {
+  useEffect((): void => {
     setMounted(true);
   }, []);
 

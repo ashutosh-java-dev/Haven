@@ -5,7 +5,7 @@ interface RoomCardsProps {
   roomTypes: RoomType[];
 }
 
-export default function RoomCards({ roomTypes }: RoomCardsProps) {
+export default function RoomCards({ roomTypes }: RoomCardsProps): React.ReactNode {
   return (
     <div>
       <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Rooms</h2>

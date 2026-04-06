@@ -5,7 +5,7 @@ interface ContactCardProps {
   contact: Contact;
 }
 
-export default function ContactCard({ contact }: ContactCardProps) {
+export default function ContactCard({ contact }: ContactCardProps): React.ReactNode {
   if (!contact) return null;
 
   return (

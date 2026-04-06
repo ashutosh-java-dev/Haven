@@ -8,8 +8,8 @@ interface PrimeLocationProps {
   longitude: number;
 }
 
-export default function PrimeLocation({ address, nearbyLandmarks, latitude, longitude }: PrimeLocationProps) {
-  const mapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude - 0.02}%2C${latitude - 0.015}%2C${longitude + 0.02}%2C${latitude + 0.015}&layer=mapnik&marker=${latitude}%2C${longitude}`;
+export default function PrimeLocation({ address, nearbyLandmarks, latitude, longitude }: PrimeLocationProps): React.ReactNode {
+  const mapUrl: string = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude - 0.02}%2C${latitude - 0.015}%2C${longitude + 0.02}%2C${latitude + 0.015}&layer=mapnik&marker=${latitude}%2C${longitude}`;
 
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">

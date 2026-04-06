@@ -5,7 +5,7 @@ interface HotelPoliciesProps {
   policies: Policies;
 }
 
-export default function HotelPolicies({ policies }: HotelPoliciesProps) {
+export default function HotelPolicies({ policies }: HotelPoliciesProps): React.ReactNode {
   if (!policies) return null;
 
   return (

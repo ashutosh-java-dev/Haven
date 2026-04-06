@@ -13,7 +13,7 @@ const formatDisplayDate = (dateString: string): string => {
     return `${dayMonth}, ${year}`;
 };
 
-export const Header = (): React.ReactNode => {
+export const Header: React.FC = (): React.ReactNode => {
     const [checkInDate, setCheckInDate] = useState<string>("");
     const [checkOutDate, setCheckOutDate] = useState<string>("");
 

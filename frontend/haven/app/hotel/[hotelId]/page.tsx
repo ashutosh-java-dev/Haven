@@ -12,7 +12,7 @@ import AmenitiesCarousel from "@/components/feature/hotel/AmenitiesCarousel";
 import ContactCard from "@/components/feature/hotel/ContactCard";
 import AwardsSection from "@/components/feature/hotel/AwardsSection";
 
-export default async function HotelDetailsPage({ params }: { params: Promise<{ hotelId: string }> }) {
+export default async function HotelDetailsPage({ params }: { params: Promise<{ hotelId: string }> }): Promise<React.ReactNode> {
   const { hotelId }: { hotelId: string } = await params;
   const hotel: Hotel = await getHotels(`${hotelId}`, "");
 

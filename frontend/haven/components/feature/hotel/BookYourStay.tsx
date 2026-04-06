@@ -10,13 +10,13 @@ interface BookYourStayProps {
   depositRequired: boolean;
 }
 
-export default function BookYourStay({ roomTypes, freeCancellation, depositRequired }: BookYourStayProps) {
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
-  const [guests, setGuests] = useState("2 Adults");
+export default function BookYourStay({ roomTypes, freeCancellation, depositRequired }: BookYourStayProps): React.ReactNode {
+  const [checkIn, setCheckIn] = useState<string>("");
+  const [checkOut, setCheckOut] = useState<string>("");
+  const [guests, setGuests] = useState<string>("2 Adults");
 
-  const lowestPrice = roomTypes.reduce((min, room) => {
-    const discounted = room.pricing.basePrice * (1 - room.pricing.discountPercentage / 100);
+  const lowestPrice: number = roomTypes.reduce((min: number, room: RoomType): number => {
+    const discounted: number = room.pricing.basePrice * (1 - room.pricing.discountPercentage / 100);
     return discounted < min ? discounted : min;
   }, Infinity);
 

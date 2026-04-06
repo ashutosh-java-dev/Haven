@@ -5,7 +5,7 @@ interface AmenitiesCarouselProps {
   amenities: Amenity[];
 }
 
-export default function AmenitiesCarousel({ amenities }: AmenitiesCarouselProps) {
+export default function AmenitiesCarousel({ amenities }: AmenitiesCarouselProps): React.ReactNode {
   if (!amenities || amenities.length === 0) return null;
 
   return (

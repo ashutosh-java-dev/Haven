@@ -98,7 +98,7 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }: { rating: number }
   </div>
 );
 
-const QuoteIcon: React.FC = () => (
+const QuoteIcon: React.FC = (): React.ReactNode => (
   <svg className="w-10 h-10 text-orange-200 absolute top-6 right-6 opacity-50" fill="currentColor" viewBox="0 0 32 32">
     <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2V8z" />
   </svg>

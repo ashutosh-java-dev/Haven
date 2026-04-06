@@ -1,4 +1,4 @@
-export default function RegisterPage() {
+export default function RegisterPage(): React.ReactNode {
     return (
         <div>
             Register Page
