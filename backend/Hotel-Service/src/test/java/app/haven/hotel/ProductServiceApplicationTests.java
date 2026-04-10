@@ -1,4 +1,4 @@
-package app.haven.products;
+package app.haven.hotel;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

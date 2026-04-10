@@ -1,4 +1,4 @@
-package app.haven.products.models;
+package app.haven.hotel.models.hotel;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
