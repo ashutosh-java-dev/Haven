@@ -23,7 +23,10 @@ public class Hotel {
     @Column(name = "hotel_id", length = 50)
     private String hotelId;
 
+    @Column(nullable = false)
     private String name;
+
+    @Column(nullable = false)
     private String brand;
 
     @Column(length = 2000)
@@ -32,7 +35,8 @@ public class Hotel {
     private int starRating;
 
     @Enumerated(EnumType.STRING)
-    private HotelStatus status;
+    @Builder.Default
+    private HotelStatus status = HotelStatus.ACTIVE;
 
     @ElementCollection
     @CollectionTable(name = "hotel_categories", joinColumns = @JoinColumn(name = "hotel_id"))
